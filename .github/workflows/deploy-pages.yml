@@ -27,7 +27,7 @@ jobs:
         with:
           version: 11
       - run: pnpm install --frozen-lockfile --ignore-scripts
-      - run: pnpm build
+      - run: node node_modules/next/dist/bin/next build
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
