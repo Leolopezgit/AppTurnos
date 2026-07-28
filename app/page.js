@@ -19,7 +19,7 @@ export default function Home() {
   const onSpecialty = (value) => { setSpecialty(value); setDoctor(doctors[value][0]); };
 
   return <main>
-    <section className="hero"><img className="brand" src="/heges-360-logo.png" alt="HeGeS 360" /><p className="eyebrow">TURNOS MÉDICOS</p><h1>Reservá tu consulta</h1><p>Elegí la especialidad, sede y horario que mejor te quede.</p></section>
+    <section className="hero"><img className="brand" src="/AppTurnos/heges-360-logo.png" alt="HeGeS 360" /><p className="eyebrow">TURNOS MÉDICOS</p><h1>Reservá tu consulta</h1><p>Elegí la especialidad, sede y horario que mejor te quede.</p></section>
     <section className="card">
       {confirmed ? <div className="confirmation"><h2>Tu turno fue solicitado</h2><p>{specialty} · {doctor}</p><p>{location} · {time}</p><p>Consulta presencial. El pago se realiza en la institución.</p><button onClick={() => setConfirmed(false)}>Reservar otro turno</button></div> : <>
         <h2>Elegí tu turno</h2>
